@@ -1,0 +1,25 @@
+body {
+    font-family: Verdana;
+    text-align:center;
+}
+
+a {
+    color: #cc9900;
+}
+
+h1 {
+    color: #422359;
+	text-decoration: no
+}
+
+#headline{
+    color: #422359;
+	text-decoration: none;
+}
+.mission{
+    color: #ff0000;
+}
+
+.navbar{
+    text-align: center;
+}
