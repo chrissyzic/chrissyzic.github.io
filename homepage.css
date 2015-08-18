@@ -9,17 +9,18 @@ a {
 
 h1 {
     color: #422359;
-	text-decoration: no
+	text-decoration: none;
 }
 
 #headline{
     color: #422359;
 	text-decoration: none;
 }
-.mission{
-    color: #ff0000;
-}
 
 .navbar{
     text-align: center;
+}
+
+#homepage-content{
+	margin-top: 25%;
 }
