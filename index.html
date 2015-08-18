@@ -3,21 +3,53 @@
 
 <link rel="stylesheet" href="homepage.css">
 <script src="homepage.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <title>Chrissy Ziccarelli</title>
 
 <head>
     <!--<a href="javascript:;" onclick="showProgram()">programmer</a> | <a href="javascript:;" onclick="showChoice()">pro-choice</a> | <a href="javascript:;" onclick="showPunk()">punk</a>-->
+	<script>
+		$(document).ready(function(){
+			$("#my-name").click(function(){
+				$("#homepage-content").animate({'margin-top': '20%'});
+				$("#bottom").animate({'padding-top': 0});
+				$("#main-stuff").html("")
+				//$("#main-stuff").css({'margin-top':0})
+
+			});
+			$("#programmer").click(function(){
+				$("#homepage-content").animate({'margin-top': 0});
+				$("#bottom").animate({'padding-top': '40%'}, {complete: function(){window.location.href='programmer.html';}});
+			});
+			$("#punk").click(function(){
+				$("#homepage-content").animate({'margin-top': 5});
+				$("#main-stuff").html("this is all my punk content")
+				$("#bottom").animate({'padding-top': '40%'}, {complete: function(){window.location.href='punk.html';}});
+			});
+		});
+	</script>
 </head>
 
 <body>
-<div id="homepage-content"><h1>chrissy ziccarelli</h1>
-<p><a href="programmer.html">programmer</a> | <a href="punk.html">punk</a></p>
+<div id="homepage-content"><h1 id="my-name">chrissy ziccarelli</h1>
+<p><a id="programmer">programmer</a> | <a id="punk">punk</a></p>
 <p>STEM educator and all-around badass</p></div>
+<div id="main-stuff"></div>
 </body>
 
 <footer>
-	<a href="https://twitter.com/chriszee" target="_blank"><img width="30" src="twitterblack.png" /></a>   <a href="https://github.com/chrissyzic" target="_blank"><img width="30" src="githubblack.png" /></a>   <a href="mailto:chrissy.ziccarelli@gmail.com"><img width="30" src="emailblack.jpg" /></a>
+	<div id="bottom"><a href="https://twitter.com/chriszee" target="_blank"><img width="30" src="twitterblack.png" /></a>   <a href="https://github.com/chrissyzic" target="_blank"><img width="30" src="githubblack.png" /></a>   <a href="mailto:chrissy.ziccarelli@gmail.com"><img width="30" src="emailblack.jpg" /></a></div>
 </footer>
 
 </html>
+
+
+
+
+<!--
+string = id
+string = string + html
+$("div").animate(up:'1005', {complete: function(){window.location.href=string;}})
+or put "punk.html" in place of string on next line up
+-->
