@@ -12,6 +12,7 @@
 		$(document).ready(function(){
 			$("#my-name").click(function(){
 				$("#main-stuff").html("")
+				$("#tagline").html("<p>STEM educator and all-around badass</p>").slideDown();
 				$("#header-content").animate({'margin-top': '20%'});
 				$("#bottom").animate({'padding-top': 0}, {complete: function(){window.location.href='index.html';}});
 				//$("#main-stuff").css({'margin-top':0})
@@ -23,16 +24,16 @@
 			});
 			$("#punk").click(function(){
 				$("#homepage-content").animate({'margin-top': 5});
-				$("#main-stuff").html("this is all my punk content")
-				$("#bottom").animate({'padding-top': '40%'}, {complete: function(){window.location.href='punk.html';}});
+				$("#main-stuff").html("")
+				$("#bottom").animate({'padding-top': '45%'}, {complete: function(){window.location.href='punk.html';}});
 			});
 		});
 	</script>
 	
 <div id="header-content"><h1 id="my-name">chrissy ziccarelli</h1>
 	<p><a id="programmer">programmer</a> | <a id="punk">punk</a></p>
-	<p>STEM educator and all-around badass</p>
-	<div>
+	<div id="tagline"></div>
+	</div>
 </head>
 
 <body>

@@ -11,19 +11,22 @@
 	<script>
 		$(document).ready(function(){
 			$("#my-name").click(function(){
-				$("#main-stuff").html("")
+				$("#main-stuff").html("").css({'margin-top':'20%'});
+				$("#tagline").html("<p>STEM educator and all-around badass</p>").slideDown();
 				$("#header-content").animate({'margin-top': '20%'});
-				$("#bottom").animate({'padding-top': 0}, {complete: function(){window.location.href='index.html';}});
-				//$("#main-stuff").css({'margin-top':0})
+				$("#bottom").animate({'margin-top': '0'}, {complete: function(){window.location.href='index.html';}});
+				$("#main-stuff").animate({'margin-top':0}, {complete: function(){window.location.href='index.html';}})
 
 			});
 			$("#programmer").click(function(){
+				$("#tagline").slideUp();
 				$("#homepage-content").animate({'margin-top': 0});
+				$("#main-stuff").html("")
 				$("#bottom").animate({'padding-top': '40%'}, {complete: function(){window.location.href='programmer.html';}});
 			});
 			$("#punk").click(function(){
 				$("#homepage-content").animate({'margin-top': 5});
-				$("#main-stuff").html("this is all my punk content")
+				$("#main-stuff").html("")
 				$("#bottom").animate({'padding-top': '40%'}, {complete: function(){window.location.href='punk.html';}});
 			});
 		});
@@ -31,8 +34,7 @@
 	
 <div id="header-content"><h1 id="my-name">chrissy ziccarelli</h1>
 	<p><a id="programmer">programmer</a> | <a id="punk">punk</a></p>
-	<p>STEM educator and all-around badass</p>
-	<div>
+	<div id="tagline"></div></div>
 </head>
 
 <body>
