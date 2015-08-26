@@ -1,39 +1,18 @@
 <!DOCTYPE html>
 <html>
 
+<head>
 <link rel="stylesheet" href="homepage.css">
-<script src="homepage.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="homepage.js" type="text/javascript"></script>
 
 <title>Chrissy Ziccarelli</title>
 
-<head>
-	<script>
-		$(document).ready(function(){
-			$("#my-name").click(function(){
-				$("#main-stuff").html("")
-				$("#tagline").html("<p>STEM educator and all-around badass</p>").slideDown();
-				$("#header-content").animate({'margin-top': '20%'});
-				$("#bottom").animate({'padding-top': 0}, {complete: function(){window.location.href='index.html';}});
-				//$("#main-stuff").css({'margin-top':0})
 
-			});
-			$("#programmer").click(function(){
-				$("#homepage-content").animate({'margin-top': 0});
-				$("#bottom").animate({'padding-top': '40%'}, {complete: function(){window.location.href='programmer.html';}});
-			});
-			$("#punk").click(function(){
-				$("#homepage-content").animate({'margin-top': 5});
-				$("#main-stuff").html("")
-				$("#bottom").animate({'padding-top': '45%'}, {complete: function(){window.location.href='punk.html';}});
-			});
-		});
-	</script>
 	
 <div id="header-content"><h1 id="my-name">chrissy ziccarelli</h1>
 	<p><a id="programmer">programmer</a> | <a id="punk">punk</a></p>
-	<div id="tagline"></div>
-	</div>
+	<div id="tagline"></div></div>
 </head>
 
 <body>
