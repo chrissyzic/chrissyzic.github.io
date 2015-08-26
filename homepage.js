@@ -17,7 +17,7 @@ $(document).ready(function(){
 		$("#page-content").html("");
 		$("#tagline").slideUp(400, function(){
 			$("#header").animate({'margin-top': '0px'});
-			$("#contact-icons").animate({'top':'600px'}, {complete: function(){window.location.href='pro-choice.html';}});
+			$("#contact-icons").animate({'top':'1000px'}, {complete: function(){window.location.href='pro-choice.html';}});
 		});
 	});
 	$("#punk").click(function(){
