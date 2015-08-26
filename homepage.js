@@ -1,10 +1,6 @@
 $(document).ready(function(){
 	$("#my-name").click(function(){
-		$("#header").animate({'margin-top': '20%'});
-		$("#contact-icons").animate({'margin-top': '0'});
-		$("#page-content").html("")
-		//$("#main-stuff").css({'margin-top':0})
-
+		window.location.href='index.html';
 	});
 	$("#programmer").click(function(){
 		$("#page-content").html("");
@@ -17,7 +13,7 @@ $(document).ready(function(){
 		$("#page-content").html("");
 		$("#tagline").slideUp(400, function(){
 			$("#header").animate({'margin-top': '0px'});
-			$("#contact-icons").animate({'top':'1000px'}, {complete: function(){window.location.href='pro-choice.html';}});
+			$("#contact-icons").animate({'top':'600px'}, {complete: function(){window.location.href='pro-choice.html';}});
 		});
 	});
 	$("#punk").click(function(){
