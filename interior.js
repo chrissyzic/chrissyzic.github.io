@@ -2,10 +2,8 @@ $(document).ready(function(){
 	$("#my-name").click(function(){
 		$("#page-content").slideUp(400, function(){
 			$("#page-content").html("STEM educator and all-around badass");
-			$("#page-content").slideDown(400, function(){$("#top-thingy").animate({'margin-top':'20%'}, {complete: function(){window.location.href='index.html'}});});
-			});
-		$("#footer-icons").animate({'top':'130px'});
-		//$("#page-content").html("STEM education and all-around badass")
+			$("#page-content").slideDown(400, function(){$("#top-thingy").animate({'margin-top':'20%'}, {complete: function(){window.location.href='index.html';}});});
+		});
 	});
 	$("#programmer").click(function(){
 		$("#page-content").html("");
