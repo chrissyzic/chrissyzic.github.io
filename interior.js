@@ -4,15 +4,15 @@ $(document).ready(function(){
 	});
 	$("#programmer").click(function(){
 		$("#page-content").html("");
-		$("#footer-icons").animate({'margin-top':'605px'}, {complete: function(){window.location.href='programmer.html';}});
+		$("#footer-icons").animate({'margin-top':'604.5px'}, {complete: function(){window.location.href='programmer.html';}});
 	});
 	$("#pro-choice").click(function(){
 		$("#page-content").html("");
-		$("#footer-icons").animate({'margin-top':'600px'}, {complete: function(){window.location.href='pro-choice.html';}});
+		$("#footer-icons").animate({'margin-top':'70px'}, {complete: function(){window.location.href='pro-choice.html';}});
 	});
 	$("#punk").click(function(){
 		$("#page-content").html("");
-		$("#footer-icons").animate({'margin-top':'600px'}, {complete: function(){window.location.href='punk.html';}});
+		$("#footer-icons").animate({'margin-top':'790px'}, {complete: function(){window.location.href='punk.html';}});
 	});
 });
 
