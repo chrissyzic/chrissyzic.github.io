@@ -3,8 +3,9 @@ $(document).ready(function(){
 		$(".page-content").html("");
 		$(".page-content").animate({'height':'0px'});
 		$(".page-content").attr("id", "tagline");
-		$("#tagline").html("<p>STEM educator</p>");
-		$("#top-thingy").animate({'margin-top':'20%'});
+		$("#tagline").html("<p>STEM educator and all-around badass</p>");
+		$("#footer-icons").css("margin-top", "48px");
+		$("#top-thingy").animate({'margin-top':'20%'}, {complete: function(){window.location.href='index.html';}});
 	});
 	$("#about").click(function(){
 		$(".page-content").html("");
