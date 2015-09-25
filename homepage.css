@@ -1,20 +1,58 @@
 body {
 	font-family: Verdana;
     text-align:center;
-	position:relative; 
+	position:relative;
 }
 
 a {
     color: #cc9900;
 }
 
-h1 {
-    color: #422359;
+.page-content img {
+	float: left;
+	width: 400px;
+	margin-left: 0px;
+	margin-right: 10px;
+}
+
+.body-link{
 	text-decoration: none;
+	font-weight: bold;
+	color: #422359;
 }
 
 #header{
 	margin-top: 20%;
+	height: 80px;
+}
+
+#top-thingy {
+	height: 80px;
+}
+
+#my-name {
+    color: #422359;
+	text-decoration: none;
+}
+
+.page-content {
+	text-align: left;
+	margin-left: 30%; 
+	margin-right: 30%;
+}
+
+#about-content {
+	height: 300px;
+}
+
+#projects-content {
+	height: 300px;
+}
+
+#press-content {
+	height: 350px;
+	margin-left: 20%;
+	margin-right: 15%;
 }
 
 #contact-icons{
@@ -30,4 +68,8 @@ h1 {
 
 #footer-icons{
 	margin-top:16px;
+}
+
+#tagline {
+	height: 19px;
 }

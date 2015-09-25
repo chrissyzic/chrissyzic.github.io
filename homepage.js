@@ -2,49 +2,22 @@ $(document).ready(function(){
 	$("#my-name").click(function(){
 		window.location.href='index.html';
 	});
-	$("#programmer").click(function(){
-		$("#page-content").html("");
-		$("#tagline").slideUp(400, function(){
-			$("#header").animate({'margin-top': '0px'});
-			$("#contact-icons").animate({'top':'684.5px'}, {complete: function(){window.location.href='programmer.html';}});
+	$("#about").click(function(){
+		$("#tagline").slideUp(1000, function(){
+			$("#header").animate({'margin-top': '0%'});
+			$("#contact-icons").animate({'top':'412px'}, {complete: function(){window.location.href='about.html';}});
 		});
 	});
-	$("#pro-choice").click(function(){
-		$("#page-content").html("");
+	$("#projects").click(function(){
 		$("#tagline").slideUp(400, function(){
-			$("#header").animate({'margin-top': '0px'});
-			$("#contact-icons").animate({'top':'150px'}, {complete: function(){window.location.href='pro-choice.html';}});
+			$("#header").animate({'margin-top': '0%'});
+			$("#contact-icons").animate({'top':'412px'}, {complete: function(){window.location.href='projects.html';}});
 		});
 	});
-	$("#punk").click(function(){
-		$("#page-content").html("");
+	$("#press").click(function(){
 		$("#tagline").slideUp(400, function(){
 			$("#header").animate({'margin-top': '0px'});
-			$("#contact-icons").animate({'top':'870px'}, {complete: function(){window.location.href='punk.html';}});
+			$("#contact-icons").animate({'top':'462px'}, {complete: function(){window.location.href='press.html';}});
 		});
 	});
 });
-
-/*Old function for my-name that would direct back to index.html at some point...
-
-	$("#my-name").click(function(){
-		$("#header").animate({'margin-top': '20%'});
-		$("#contact-icons").animate({'margin-top': '0'});
-		$("#page-content").html("")
-		//$("#main-stuff").css({'margin-top':0})
-
-	});
-	
-*/
-
-
-/*Old punk function that had footer jump up to underneath header, then scroll back down to reload page.
-	
-	$("#punk").click(function(){
-		$("#tagline").slideUp();
-		$("#homepage-content").animate({'margin-top': 5});
-		$("#page-content").html("");
-		$("#contact-icons").animate({'padding-top': '40%'}, {complete: function(){window.location.href='punk.html';}});
-	});
-	
-*/

@@ -1,44 +1,34 @@
 $(document).ready(function(){
 	$("#my-name").click(function(){
-		$("#page-content").slideUp(400, function(){
-			$("#page-content").html("STEM educator and all-around badass");
-			$("#page-content").slideDown(400, function(){$("#top-thingy").animate({'margin-top':'20%'}, {complete: function(){window.location.href='index.html';}});});
-		});
+		$(".page-content").html("");
+		$(".page-content").animate({'height':'0px'});
+		$(".page-content").attr("id", "tagline");
+		$("#tagline").html("<p>STEM educator</p>");
+		$("#top-thingy").animate({'margin-top':'20%'});
 	});
-	$("#programmer").click(function(){
-		$("#page-content").html("");
-		$("#footer-icons").animate({'margin-top':'604.5px'}, {complete: function(){window.location.href='programmer.html';}});
+	$("#about").click(function(){
+		$(".page-content").html("");
+		$(".page-content").css("height", "0px");
+		$("#footer-icons").animate({'margin-top':'332px'}, {complete: function(){window.location.href='about.html';}});
 	});
-	$("#pro-choice").click(function(){
-		$("#page-content").html("");
-		$("#footer-icons").animate({'margin-top':'70px'}, {complete: function(){window.location.href='pro-choice.html';}});
+	$("#projects").click(function(){
+		$(".page-content").html("");
+		$(".page-content").css("height", "0px");
+		$("#footer-icons").animate({'margin-top':'332px'}, {complete: function(){window.location.href='projects.html';}});
 	});
-	$("#punk").click(function(){
-		$("#page-content").html("");
-		$("#footer-icons").animate({'margin-top':'790px'}, {complete: function(){window.location.href='punk.html';}});
+	$("#press").click(function(){
+		$(".page-content").html("");
+		$(".page-content").css("height", "0px");
+		$("#footer-icons").animate({'margin-top':'382px'}, {complete: function(){window.location.href='press.html';}});
 	});
 });
 
-/*Old function for my-name that would direct back to index.html at some point...
+/*old #my-name function with lots of sliding
 
 	$("#my-name").click(function(){
-		$("#header").animate({'margin-top': '20%'});
-		$("#contact-icons").animate({'margin-top': '0'});
-		$("#page-content").html("")
-		//$("#main-stuff").css({'margin-top':0})
-
+		$(".page-content").slideUp(400, function(){
+			$(".page-content").html("STEM educator and all-around badass");
+			$(".page-content").slideDown(400, function(){$("#top-thingy").animate({'margin-top':'20%'}, {complete: function(){window.location.href='index.html';}});});
+		});
 	});
-	
-*/
-
-
-/*Old punk function that had footer jump up to underneath header, then scroll back down to reload page.
-	
-	$("#punk").click(function(){
-		$("#tagline").slideUp();
-		$("#homepage-content").animate({'margin-top': 5});
-		$("#page-content").html("");
-		$("#contact-icons").animate({'padding-top': '40%'}, {complete: function(){window.location.href='punk.html';}});
-	});
-	
 */
