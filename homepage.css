@@ -21,6 +21,10 @@ a {
 	color: #422359;
 }
 
+.right-aligned{
+	text-align: right;
+}
+
 #header{
 	margin-top: 20%;
 	height: 80px;
@@ -50,7 +54,7 @@ a {
 }
 
 #press-content {
-	height: 350px;
+	height: 700px;
 	margin-left: 20%;
 	margin-right: 15%;
 }
